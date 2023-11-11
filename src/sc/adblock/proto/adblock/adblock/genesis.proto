@@ -1,0 +1,12 @@
+syntax = "proto3";
+package adblock.adblock;
+
+import "gogoproto/gogo.proto";
+import "adblock/adblock/params.proto";
+
+option go_package = "adblock/x/adblock/types";
+
+// GenesisState defines the adblock module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

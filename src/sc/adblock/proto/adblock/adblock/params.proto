@@ -1,0 +1,12 @@
+syntax = "proto3";
+package adblock.adblock;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "adblock/x/adblock/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

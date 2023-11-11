@@ -1,0 +1,7 @@
+syntax = "proto3";
+package adblock.adblock;
+
+option go_package = "adblock/x/adblock/types";
+
+// Msg defines the Msg service.
+service Msg {}
